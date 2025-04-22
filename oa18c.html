@@ -1,0 +1,51 @@
+{% extends 'sidebar.html' %}
+{% block content %}
+{% load static%}
+
+
+<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+				</div>
+				<div class="col-8  border p-5 shadow mt-5 ">
+			<form class="p-3" action="" method="POST" style="background: #77c720;">
+				{% csrf_token %}
+				<select class="form-control" name="country">
+					
+					<option value="Iceland">Iceland</option>
+					<option value="India">India</option>
+					<option value="America">America</option>
+					<option value="Canada">Canada</option>
+					<option value="New Zealand">New Zealand</option>
+					<option value="Pakistan">Pakistan</option>
+					<option value="United Kingdom">United Kingdom</option>
+					<option value="China">China</option>
+					<option value="Japan">Japan</option>
+					<option value="Afghanistan">Afghanistan</option>
+					<option value="Sri lanka">Sri Lanka</option>
+					<option value="Brazil">Brazil</option>
+					<option value="Bangladesh">Bangladesh</option>
+					<option value="Bangkok">Bangkok</option>
+					<option value="UAE">UAE</option>
+					<option value="Iran">Iran</option>
+					<option value="France">France</option>
+					<option value="Australia">Australia</option>
+					<option value="Germany">Germany</option>
+					<option value="Peru">Peru</option>
+				</select><br><br>
+				<input type="submit" value="Visualize" class="form-control">
+			</form>
+			<br>
+			{% if graph %}
+{{ graph|safe }}
+{% endif %}
+		</div>
+				<div class="col-3">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

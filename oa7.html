@@ -1,0 +1,32 @@
+{% extends 'sidebar.html' %}
+{% block content %}
+{% load static%}
+<style type="text/css">
+	p{  }
+</style>
+
+<div class="container-fluid">
+		<div class="container pt-5">
+			<div class="row">
+				<div class="col-4"></div>
+				<div class="col-6 border shadow   p-5 mt-5">
+					<form method="POST" action="">
+						{% csrf_token %}
+						<h3 style="color:#77c720">Carbon Tetrachloride (CTC) for all years</h3>
+						<hr/>
+						<br/>
+						<label class="">Enter country name</label><br>
+						<input type="text" name="" class="form-control form-control-lg rounded-0" >
+						<br/>
+						<button type="submit" class="btn text-light" style="background-color: #77c720;">Submit</button>
+						
+					</form>
+						
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

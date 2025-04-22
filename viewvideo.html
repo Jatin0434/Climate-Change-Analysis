@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+
+<div  style="background-image:url({%static 'images/bg-image.jpg' %})">
+	<div class="container-fluid  text-light pt-5 pb-5" style="background:rgba(0, 0, 0, .50);">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center" >
+					<h3 style="font-size:50px">Videos</h3>
+					<p>Home/videos</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+<div class="container">
+	<div class="row">
+		{% for i in data %}
+		<div class="col-4">
+			
+			<div class="card mt-5 shadow" style="width: 22rem;">
+  <video src="{{i.link.src}}" controls></iframe>
+    <h5>{{i.title}}</h5>
+    <p class="card-text">{{i.description|truncatechars:150}}</p>
+    
+  </div>
+</div>
+		</div>
+
+
+		{% endfor %}
+	</div>
+</div>
+
+
+{% endblock %}

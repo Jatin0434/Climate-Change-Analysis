@@ -1,0 +1,41 @@
+{% extends 'sidebar.html' %}
+{% block content %}
+{% load static%}
+
+<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+				</div>
+				<div class="col-6  border p-5 shadow mt-5 ">
+				<form class="" method="POST" action="">
+						{% csrf_token %} 
+					<h3 class="text-center" style="color: #77c720;">Edit Profile</h3>
+					<label>Name</label>
+					<input type="text" name="name" class="form-control" value="{{i.Name}}"><br>
+					<label>Email</label>
+					<input type="text" name="email" class="form-control"value="{{i.Email}}" ><br>
+					<label>Phone no.</label>
+					<input type="text"name="phone" class="form-control"value="{{i.Phone}}" ><br>
+					<label>Age</label>
+					<input type="text"name="age" class="form-control"value="{{i.Age}}"><br>
+					<label>DOB</label>
+					<input type="text" name="dob" class="form-control" value="{{i.DOB}}"><br>
+					<label>Address</label>
+					<input type="text"name="address"  class="form-control"value="{{i.Address}}" ><br>
+					<label>City</label>
+					<input type="text" name="city" class="form-control" value="{{i.City}}"><br>
+					<label>Hobbies</label>
+					<input type="text" name="hoobies" class="form-control"value="{{i.Hobbies}}" ><br>
+
+				
+				<button type="submit"> Submit</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}
+
+

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+<div  style="background-image:url({%static 'images/bg-image.jpg' %})">
+	<div class="container-fluid  text-light pt-5 pb-5" style="background:rgba(0, 0, 0, .50);">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center" >
+					<h3 style="font-size:50px">blog</h3>
+					<p>Home/Blogs</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+<div class="container">
+	<div class="row">
+		<div class="col-2"></div>
+		<div class="col-8">
+			
+			<div class="card mt-5 shadow" style="width: 100%;">
+  <img src="{{i.image.url}}" class="card-img-top" alt="..." height="500px">
+  <div class="card-body">
+    <h5 class="card-title">{{i.title}}</h5>
+    <p style="color:#77c720">By: {{i.added_on}}</p>
+    <p class="card-text">{{i.description}}</p>
+    <a href="{% url 'viewblog'  %}" class="btn btn-primary">view All Blog</a>
+  </div>
+</div>
+		</div>
+
+
+		
+	</div>
+</div>
+
+	
+
+	
+
+{% endblock %}

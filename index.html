@@ -1,0 +1,295 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    
+    <link rel="stylesheet" type="text/css" href="{%static 'icofont/icofont.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.min.css' %}">
+  </head>
+  <body>
+    <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={%static "images/slider1.jpg" %} class="d-block w-100" alt="..." height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>We'll Save Our Planet</h5>
+        <h1> PREPARING FOR SEVERE DROUGHT<h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src={%static "images/slider2.jpg" %} class="d-block w-100" alt="..." height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Closely Monitor Soil Moisture</h5>
+        <h1>GROW AWARENESS ON FIELD DRYNESS<h1>
+      </div>
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+   
+
+<!--  -->
+<div class="container-fluid">
+  <div class="container">
+    <div class="row  border shadow bg-light p-5" style="position:relative; margin-top: -50px ;" >
+      <div class="col-3">
+        <h3>Global Temperature</h3>
+        <p><i class="icofont-arrow-up"></i> 1.4 <sup>o</sup>F since 1880</p>
+
+      </div>
+      <div class="col-3">
+        <h3>Losing Land Ice</h3>
+        <p><i class="icofont-arrow-down"></i> 285.0 <sup>Gigatonnes per year</sup></p>
+      </div>
+      <div class="col-3">
+        <h3>Rising Sea Level</h3>
+        <p><i class="icofont-arrow-up"></i> 3.3 <sup>milimeters per year</sup></p>
+      </div>
+      <div class="col-3">
+        <h3>Carbon Dioxide</h3>
+        <p><i class="icofont-arrow-up"></i> 2.1 <sup>ppm per year</sup></p>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!--  -->
+<div class="container pt-5 pb-5">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h3>OUR PRIORITIES</h3>
+      <p>WE ARE CONCERNING ABOUT FOLLOWING ISSUES AND OUR MISSIONS ARE SOLVING THOSE ACROSS GLOBE.</p>
+    </div>
+    
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <div class="card shadow" style="width: 18rem;">
+  <img src={%static "images/p1.jpg"%} class="card-img-top" alt="...">
+  <div class="card-body text-light" style="background-color:black">
+    <p class="card-text">Stop Cutting Down Trees</p>
+  </div>
+</div>
+      
+    </div>
+
+<div class="col-4">
+  <div class="card" style="width: 18rem;">
+  <img src={%static "images/p2.jpg"%} class="card-img-top" alt="...">
+  <div class="card-body text-light" style="background-color: black;">
+    <p class="card-text">Be Efficient In Energy Food</p>
+  </div>
+</div>
+
+</div>
+
+<div class="col-4">
+  <div class="card" style="width: 18rem;">
+  <img src={%static "images/p3.jpg"%} class="card-img-top" alt="...">
+  <div class="card-body text-light" style="background-color:black;">
+    <p class="card-text">Being Water At Home</p>
+  </div>
+</div>
+  </div>
+
+
+
+
+  </div>
+  
+
+  <div class="row pt-4">
+    <div class="col-4">
+      <div class="card shadow" style="width: 18rem;">
+  <img src={%static "images/p4.jpg"%} class="card-img-top" alt="...">
+  <div class="card-body text-light" style="background-color:black">
+    <p class="card-text">Preventing Air Pollution</p>
+  </div>
+</div>
+      
+    </div>
+
+<div class="col-4">
+  <div class="card" style="width: 18rem;">
+  <img src={%static "images/p5.jpg"%}class="card-img-top" alt="...">
+  <div class="card-body text-light" style="background-color: black;">
+    <p class="card-text">Reducing Greenhouse Gas</p>
+  </div>
+</div>
+
+</div>
+
+<div class="col-4">
+  <div class="card" style="width: 18rem;">
+  <img src={%static "images/p6.jpg"%} class="card-img-top" alt="...">
+  <div class="card-body text-light" style="background-color:black;">
+    <p class="card-text">Recycling The Daily Waste</p>
+  </div>
+</div>
+  </div>
+
+
+
+
+  </div>
+  </div>
+
+
+<div class="container">
+  <div class="row  border shadow">
+
+    <div class="col-6 ps-5">
+      <h3 class="pt-5 ">Stop Polluters</h3>
+      <p>Polluters must quit debilitating the privileges of defense less groups and undermining atmosphere science and activity. Give an application directly to the local mayor and we will be forwarding it.</p>
+      <button class="btn text-light" style="background-color:#77c720">Take Action</button>
+    </div>
+    <div class="col-6">
+      <img src={%static "images/p7.jpg"%} width="100%">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container pt-5 text-center">
+  <div class="row">
+  <div class="col-12 text-center" >
+    <h1>Our Experts</h1>
+    <p>MEET OUR MEMBERS WHO ARE SOLVING DIFFERENT TYPES OF CLIMATE ISSUES AROUND THE WORLD</p>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-4 border-end">
+    <img src={%static "images/p8.jpg"%}>
+    <h3 class="pt-3">GARY ALEXANDER</h3>
+    <h6 style="color: #77c720;">CLIMATE SCIENTIST</h6>
+    <p>Former a scientist and try to growing awareness on climate change.</p>
+  </div>
+  <div class="col-4 border-end">
+    <img src={%static "images/p9.jpg"%}>
+    <h3 class="pt-3">MUNOZ MELLISA</h3>
+    <h6 style="color:#77c720">SOIL SCIENTIST</h6>
+    <p>Former a scientist and try to growing awareness on climate change.</p>
+  </div>
+  <div class="col-4 border-end">
+    <img src={%static "images/p10.jpg"%}>
+    <h3 class="pt-3">ABRAHM JOHN</h3>
+    <h6 style="color:#77c720">WEATHER SPECIALIST</h6>
+    <p>Former a scientist and try to growing awareness on climate change.</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>UPCOMING EVENTS</h1>
+      <p>CLIMATE ARE CHANGING BY NATURAL AND HUMAN ACTIVITIES AND WE ARE GROWING AWARENESS IN MANY COUNTRIES.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <div class="card" style="width: 25rem;">
+  <img src={%static "images/h1.jpg" %} class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Developing Low Carbon</h5>
+    <p class="card-text">We should research and develop more efficient carbon technologies to protect global warming around the world.</p>
+    <p><i class="icofont-clock-time"></i> 01:00pm -03:00pm</p>
+    <p><i class="icofont-location-pin"></i> Jordan lows,Texas</p>
+  </div>
+</div>
+</div>
+<div class="col-4">
+  <div class="card" style="width: 25rem;">
+  <img src={%static "images/h2.jpg" %} class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Encouraging To A Green City</h5>
+    <p class="card-text">Growing awareness about green house among the people and full encourages them to clean city for our healthy life.</p>
+    <p><i class="icofont-clock-time"></i> 01:00pm -03:00pm</p>
+    <p><i class="icofont-location-pin"></i> Jordan lows,Texas</p>
+    
+  </div>
+</div>
+</div>
+<div class="col-4">{%static
+  <div class="card" style="width: 25rem;">
+  <img src={%static "images/h3.jpg" %} class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Prevent Warm In Antarctica</h5>
+    <p class="card-text">Ice are melting in Antarctica by natural and human activities. As a result water increased risk in sea level rising.</p>
+    <p><i class="icofont-clock-time"></i> 01:00pm -03:00pm</p>
+    <p><i class="icofont-location-pin"></i> Jordan lows,Texas</p>
+
+  </div>
+</div>
+</div>
+  
+</div>
+    </div>
+    
+  </div>
+  
+</div>
+<center><button class="btn text-light text-center mt-5"style="background-color:#77c720;">Load All Event</button></center>
+</div>
+
+
+
+
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">Latest News</h1>
+      <p class="text-center">INCREASING IN RISK OF CLIMATE CHANGE BY DEFORESTATION, REDUCING WILDLIFE HABITAT AND GROWING INDUSTRIES.</p>.
+      <div class="row">
+        <div class="col-6">
+          <img src={%static "images/h4.jpg" %} width="95%"><br><br>
+          <h3>Increasing Risk Of Droughts,Storm,Floods</h3>
+          <p>Storms,Droughts and Floods and other natural disasters are oftenly icreasing by Global Warming around the globe</p>
+          <p><i class="icofont-pen"></i> Gold Smith <i class="icofont-comment"></i> 2 comments</p>
+        </div>
+        <div class="col-6">
+          <img src={%static "images/h5.jpg" %} width="95%"><br><br>
+          <h3>Changing Landscape And Widlife  Communities</h3>
+          <p>Landscape and Wildlife habitat by changing cutting down the Trees,overpupolation increasing big coal and gas</p>
+          <p><i class="icofont-pen"></i> Gold Smith <i class="icofont-comment"></i> 2 comments</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+    {% endblock %}
+  </body>
+</html>

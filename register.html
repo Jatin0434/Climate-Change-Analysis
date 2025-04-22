@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+	<div class="container">
+	<div class="row" style="background-image: url( '') ; height :600px; background-size: cover;" >
+		<div class="col-6">
+			<img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg" width="100%">
+		</div>
+		<div class="col-6 mt-5 ">
+	
+		
+			<form class="border shadow p-5" method="POST" action="">
+						{% csrf_token %} 
+				
+					<h1> user Login</h1>
+					
+					<label>Name</label>
+					<input type="name" name="nm" placeholder="name" class="form-control rounded-0 p-2">
+					<br>
+					<label>Email Addrees</label>
+					<input type="email" name="em" placeholder="Email Address" class="form-control rounded-0 p-2">
+					<br>
+				
+					<label class="mb-1">Password</label>
+					<input type="password" name="pw" placeholder="password" class="form-control rounded-0 p-2">
+					<br>
+					<label class="mb-1"> Confirm Password</label>
+					<input type="password" name="cpw" placeholder="password" class="form-control rounded-0 p-2">
+					<br>
+				<button type="submit">Login</button>
+				<br>
+				
+			</form>
+		</div>
+	
+
+</div></div>
+<script type="text/javascript">
+	{% if msg == 1 %}
+	alert("Password and Confirm_Password doesn't match")
+	{% elif mg == 2 %}
+	alert("email Id is already register ")
+
+	{% elif msg == 3 %}
+	alert("Register succ")
+	{% endif %}
+</script>
+
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,44 @@
+{% extends 'sidebar.html' %}
+{% block content %}
+{% load static%}
+<style type="text/css">
+	
+</style>
+
+<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-3"></div>
+				<div class="col-8  pt-5">
+					<h3 class="text-center" style="color:#77c720"> Ozone Layer Analysis</h3>
+					<hr/>
+
+
+				<a href={% url 'oa1c'%}>	<p class="border p-3 shadow mt-4 rounded-pill" > Consumption of controlled substance (zero-filled) - Chemical: Methyl Chloroform  for a country for all years</p> </a>
+					<a href={% url 'oa2c'%} ><p class="border p-3 shadow mt-4 rounded-pill"> Consumption of controlled substance (zero-filled) - Chemical: Methyl Chloroform  for a country for a range of years</p> </a>
+					<a href={% url 'oa3c'%}> <p class="border p-3 shadow mt-4 rounded-pill">Consumption of controlled substance (zero-filled) - Chemical: Methyl Bromide(MB) for a all years</p></a>
+					<a href={% url 'oa4c'%}><p class="border p-3 shadow mt-4 rounded-pill">Consumption of controlled substance (zero-filled) - Chemical: Methyl Bromide(MB) for a range of years</p></a>
+					<a href={% url 'oa5c'%}><p class="border p-3 shadow mt-4 rounded-pill">Consumption of controlled substance (zero-filled) - Chemical: Chemical: Hydrochloroflurocarbons (HCFCs) for a all years</p></a>
+					<a href={% url 'oa6c'%}><p class="border p-3 shadow mt-4 rounded-pill">Consumption of controlled substance (zero-filled) - Chemical: Chemical: Hydrochloroflurocarbons (HCFCs) for a range of years</p></a>
+					<a href={% url 'oa7c'%}><p class="border p-3 shadow mt-4 rounded-pill">Consumption of controlled substance (zero-filled) - Chemical: Carbon Tetrachloride (CTC) for a all years</p></a>
+					<a href={% url 'oa8c'%}><p class="border p-3 shadow mt-4 rounded-pill">Consumption of controlled substance (zero-filled) - Chemical: Carbon Tetrachloride (CTC) for a range of years</p></a>
+					<a href={% url 'oa9c'%}><p class="border p-3 shadow mt-4 rounded-pill">Consumption of controlled substance (zero-filled) - Chemical: Halons for a all years</p></a>
+					<a href={% url 'oa10c'%}><p class="border p-3 shadow mt-4 rounded-pill">Consumption of controlled substance (zero-filled) - Chemical: Halons for a range of years</p></a>
+					<a href={% url 'oa11'%}><p class="border p-3 shadow mt-4 rounded-pill">Consumption of controlled substance (zero-filled) - Chemical: Chlorofluorocarbons (CFCs) for a all years</p></a>
+					<a href={% url 'oa12'%}><p class="border p-3 shadow mt-4 rounded-pill">Consumption of controlled substance (zero-filled) - Chemical: Chlorofluorocarbons (CFCs) for a range of years</p></a>
+					<a href={% url 'oa13'><p class="border p-3 shadow mt-4 rounded-pill"> Comparison of two countries Consumption of controlled substance (zero-filled) - Chemical: Methyl Chloroform (TCA) </p></a>
+					<a href={% url 'oa14'}><p class="border p-3 shadow mt-4 rounded-pill">Comparison of two countries Consumption of controlled substance (zero-filled) - Chemical: Methyl Bromide(MB) </p></a>
+					<a href={% url 'oa15'%<p class="border p-3 shadow mt-4 rounded-pill"> Comparison of two countries Consumption of controlled substance (zero-filled) - Chemical: Chemical: Hydrochloroflurocarbons (HCFCs)</p></a>
+					<a href={% url 'oa16'%}><p class="border p-3 shadow mt-4 rounded-pill"> Comparison of two countries Consumption of controlled substance (zero-filled) - Chemical: Carbon Tetrachloride (CTC)</p></a>
+					<a href={% url 'oa17'}><p class="border p-3 shadow mt-4 rounded-pill"> Comparison of two countries Consumption of controlled substance (zero-filled) - Chemical: Halons</p></a>
+					<a href={% url 'oa18'><p class="border p-3 shadow mt-4 rounded-pill">Comparison of two countries Consumption of controlled substance (zero-filled) - Chemical: Chlorofluorocarbons (CFCs)</p></a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}
+
+

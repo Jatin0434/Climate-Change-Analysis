@@ -1,0 +1,35 @@
+{% extends 'sidebar.html' %}
+{% block content %}
+{% load static %}
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+				</div>
+				<div class="col-6  border p-5 shadow mt-5 ">
+				<p>Name:{{user.Name}}</p>
+				<p>Email: {{user.Email}}</p>
+				<p>Phone: {{user.Phone}}</p>
+				<p>Age: {{user.Age}}</p>
+				<p>DOB: {{user.DOB}}</p>
+				<p>Address: {{user.Address}}</p>
+				<p>City: {{user.City}}</p>
+				<p>Hobbies: {{user.Hobbies}}</p>
+				
+
+					
+
+
+
+
+				</div>
+				<div class="col-3">
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+
+</body>
+</html>

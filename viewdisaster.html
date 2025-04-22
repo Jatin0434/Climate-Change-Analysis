@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+
+<div  style="background-image:url({%static 'images/bg-image.jpg' %})">
+	<div class="container-fluid  text-light pt-5 pb-5" style="background:rgba(0, 0, 0, .50);">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center" >
+					<h3 style="font-size:50px">Disasters</h3>
+					<p>Home/Disasters</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+<div class="container">
+	<div class="row">
+		{% for i in data %}
+		<div class="col-4">
+			
+			<div class="card mt-5 shadow" style="width: 22rem;">
+  <img src="{{i.image.url}}" class="card-img-top" alt="..." height="200px">
+  <div class="card-body">
+    <h5 class="card-title">{{i.title}}</h5>
+    <p class="card-text">{{i.description|truncatechars:150}}</p>
+    <a href="{% url 'detaildisaster' id=i.id %}" class="btn " style="background-color: #77c720;">view more</a>
+  </div>
+</div>
+		</div>
+
+
+		{% endfor %}
+	</div>
+</div>
+
+
+{% endblock %}

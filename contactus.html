@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{%static 'icofont/icofont.min.css' %}">
+</head>
+<body>
+	<div  style="background-image:url('header-bg.jpg')">
+	<div class="container-fluid  text-light pt-5 pb-5" style="background:rgba(0, 0, 0, .50);">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center" >
+					<h3 style="font-size:50px">Contact Us</h3>
+					<p>Home/Contact</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<!--  -->
+
+	<div class="container pt-5 pb-5">
+		<div class="row">
+			<div class="col-6">
+				<h3><span style="border-bottom:3px solid #77c720" class="pb-2">Say</span> Hello To Us </h3>
+				
+                <form class="pt-3"  method="POST" action="">
+						{% csrf_token %} 
+                	<input type="text" placeholder="Name" class="form-control border-0 border-bottom"><br/>
+                	<input type="text" placeholder="Email" class="form-control border-0 border-bottom"><br/>
+                	<input type="text" placeholder="Subject" class="form-control border-0 border-bottom"><br/>
+                	<input type="text" placeholder="message" class="form-control border-0 border-bottom"><br/>
+                </form>
+                <center><button class="btn text-light rounded-0 btn-lg " style="background:#77c720"> Send Now</button></center>
+
+			</div>
+			<div class="col-6">
+				<h3><span style="border-bottom:3px solid #77c720"class="pb-2" >Co</span>ntact Us</h3>
+				<hr/>
+				<p><i class="icofont-ui-home  text-light p-2"style="background-color: #77c720;"></i> Verka </p><br/>
+				
+				<p><i class="icofont-phone  text-light p-2" style="background-color: #77c720;"></i> 6280404194</p><br/>
+				<p> <i class="icofont-email  text-light p-2"style="background-color: #77c720;"></i> gurpeet@gmail.com</p><br/>
+				<p> <i class="icofont-world  text-light p-2"style="background-color: #77c720;"></i> www.yourdomain.com</p><br/>
+				<h3><span style="border-bottom:3px solid #77c720"class="pb-2" >We</span> Are Social</h3>
+				<hr/>
+				<i class="icofont-twitter bg-primary text-light p-2"></i>
+				<i class="icofont-facebook bg-info text-light p-2"></i>
+				<i class="icofont-instagram bg-danger text-light p-2"></i>
+				<i class="icofont-tinder bg-dark text-light p-2"></i>
+
+
+		 </div>
+</div>
+	</div>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27169.85794126198!2d74.84327394295215!3d31.654865304803494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39196493fdde71ef%3A0x5a89f3cec3595534!2sRanjit%20Avenue%2C%20Amritsar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1678959731194!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<script type="text/javascript">
+	{% if msg == 1 %}
+	alert("succ")
+	{% endif %}
+</script>	
+
+	
+
+
+
+{% endblock %}
+</body>
+</html>
